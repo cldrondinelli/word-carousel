@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --background-word:#9ad49a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+        body {
+            background-color: #000;
+            color: #ffffff;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+        }
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1:after {
+    content: "";
+    animation: 6s swap  infinite;
+    background: var(--background-word);
+    padding: 1rem;
+    border-radius: 0.5em;
+}
+
+@keyframes swap {
+    
+    0% {
+        content: "Iced Coffee";
+    }
+
+    25% {
+        content: "Music";
+    }
+
+    50% {
+        content: "Arts";
+    }
+
+    75% {
+        content: "Coding";
+    }
+
+    100% {
+        content: "Playing Guitar";
+    }
+}
